@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#730076;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0; /* font is size 0, if we englarge this the images on the cards will show up */
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+ 
+.deck .card.open { /* use in your j.s file: if the card is clicked, the color of the card will change */
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+
+}
+
+.deck .card.show { /*  use in your j.s file: if the card is clicked, the font will be this size */
+    font-size: 33px;
+}
+
+.deck .card.match { /* use in your j.s file: if the cards match ,following styles will be in affect */
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+    color:#EE00F0;
+}
+
+.deck .card.disabled {
+
+    pointer-events: none /*this disables the click events on the card, can not click same card twice*/ 
+}
+
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+    color:#C8005D;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    color:#F3DD0F;
+
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+   color:#F3DD0F;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    color:#EB00FA;
+}
+
+
+/* 
+* Styles for the Modal
+*/
+
+
+/* https://www.w3schools.com/howto/howto_css_modals.asp*/
+/*https://css-tricks.com/considerations-styling-modal/ */
+
+.modal { /*background for modal*/
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto ; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/*Modal Content/Box */
+.modal-content {
+    font-size: 25px;
+    font-style: oblique;
+    background-color: #C9A7ED;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center
+  
+  
+    
+}
+
+
+.modal_replay {
+    background-color:#66CCFF ;
+    padding: 0.3rem 3rem;
+    font-size: 1.2rem;
+    width: 30%;
+    font-family: inherit;, cursive;
+    font-style:bold;
+    color: #D600FA;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+.modal_cancel {
+    background-color:#66CCFF ;
+    padding: 0.3rem 3rem;
+    font-size: 1.2rem;
+    width: 30%;
+    font-family: inherit;, cursive;
+    font-style:bold;
+    color: #D600FA;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    cursor:pointer;
+}
+
+
+/* The Close Button */
+.close {
+    color: #BB007A;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+    margin: -120px 0px;
+  
+}
+
+.close:hover,
+.close:focus {
+    color: #2D44E6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.show {
+    visibility: visible ;
+    opacity: 1 ;
+}
+
+
+.hide {
+    display: none;
+    visitibility: hidden;
+    opacity: 0
+}
+
+
+.modal_time {
+
+    color:#E76921;
+}
+
+
+.modal_moves{
+
+    color:#E76921;
+}
+
+
+.modal_stars{
+
+    color:#E76921;
+}
+
+
+.fade{
+  
+}
+
