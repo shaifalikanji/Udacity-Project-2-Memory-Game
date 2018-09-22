@@ -58,8 +58,8 @@ https://www.w3schools.com/js/js_comparisons.asp
 https://www.w3schools.com/howto/howto_js_popup.asp
 https://www.w3schools.com/js/js_timing.asp
 https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
-https://codepen.io/chrisvneal/pen/OEMJyR : how to create timer
-https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ : how to create timer
+https://codepen.io/chrisvneal/pen/OEMJyR 
+https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ 
 
 ## SCREEN SHOT OF GAME:
 <img width="892" alt="screen shot 2018-09-22 at 12 00 28 pm" src="https://user-images.githubusercontent.com/38163931/45922329-3dfdcc80-be7e-11e8-8aeb-96691a18aa8f.png">
