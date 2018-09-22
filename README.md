@@ -37,3 +37,4 @@ Create a Move Counter: using [function addMove] Game displays the current number
 
 use a shuffle function: from the site below // Shuffle function from http://stackoverflow.com/a/2450976
 
+## SCREEN SHOT OF GAME:
